@@ -1,0 +1,71 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    color: #090909;
+}
+
+.logo-img {
+    width: 24px;
+    height: 24px;
+}
+
+.container {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+header p {
+    margin: 0;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    gap: 2em;
+}
+
+#hero-section {
+    background-image: url("/images/article-hero.png");
+    background-size: cover;
+    min-height: 300px;
+    color: white;
+    display: flex;
+}
+
+.new-date {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.hero-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.hero-items h1 {
+    margin: 0;
+}
+
+.hero-items p {
+    margin-top: 0;
+    font-weight: 300;
+}
