@@ -42,6 +42,11 @@ header {
     gap: 2em;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #hero-section {
     background-image: url("/images/article-hero.png");
     background-size: cover;
@@ -68,4 +73,62 @@ header {
 .hero-items p {
     margin-top: 0;
     font-weight: 300;
+}
+
+.news img{
+    width: 100%;
+    margin: 1.5em auto;
+    display: block;
+}
+
+.news h2, p {
+    margin: 0;
+}
+
+.description {
+    padding-bottom: 1em;
+}
+
+.news .description {
+    color: #505050;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#personal-info img {
+    border-radius: 100px;
+    width: 150px;
+}
+
+#recent {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#personal-info p{
+    margin: 1em 0;
+}
+
+@media (min-width: 768px) {
+    #grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    #hero-section {
+        background-image: url("/images/article-hero-big.png");
+        background-position: 20%;
+        min-height: 70%;
+    }
+
+    #hero-section p {
+        max-width: 40%;
+    }
 }
